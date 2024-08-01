@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blank3 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: rgb(248, 249, 250);
+}
+
+.tittle {
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tittle h4 {
+    font-size: 40px;
+}
+
+.tittle p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #6c757d;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 416px;
+    margin: 1%;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+}
+
+.box img {
+    width: 100%;
+    height: 312px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.content p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #6c757d;
+}
+
+.passiv {
+    width: 416px;
+    height: 312px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    background-color: rgba(255, 200, 0, 0.9);
+}
+
+.passiv:hover {
+    opacity: 1;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+}
+
+/* Modal */
+.modal {
+    width: 800px;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    flex-direction: column;
+    display: none;
+    top: 0;
+    left: 20%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 11;
+}
+
+.icon {
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #ffc800 !important;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 10px 0px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #cca000 !important;
+}
+
+.text h2 {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text em {
+    font-family: 'Roboto Slab', serif;
+    color: #6c757d;
+}
+
+.fotos {
+    margin: 15px 0;
+}
+
+.proj {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px !important;
+    color: #212529;
+}
+
+.proj h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 100;
+}
+
+#foto {
+    width: 400px;
+    height: 340px;
+}

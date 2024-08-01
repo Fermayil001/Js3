@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        #box2 {
+            width: 150px;
+            height: 150px;
+            border: 2px dashed black;
+            margin: 20px 0 20px 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>1. Sade kalkulyator</p>
+
+    <input id="inp1" type="text">
+    <input id="inp2" type="text">
+    <button onclick="hesabla(this)">/</button>
+    <button onclick="hesabla(this)">*</button>
+    <button onclick="hesabla(this)">+</button>
+    <button onclick="hesabla(this)">-</button>
+
+    <hr>
+
+    <!-- ------------------------------------------- -->
+
+    <p>2. Inputa daxil edilmiş sözü tərsinə çevirən proqram</p>
+    <input id="inp3" type="text">
+    <button onclick="ters()">Convert</button>
+
+    <hr>
+    <!-- ------------------------------------------- -->
+
+    <input type="text" id="inpwidth" placeholder="width">
+    <input type="text" id="inpheight" placeholder="height">
+    <input type="text" id="borderwidth" placeholder="border width">
+    <button onclick="deyis(this)">Convert</button>
+    <div id="box" style="width: 200px; height: 200px; border:2px dashed; margin: 20px 0 20px 60px;"></div>
+
+    <hr>
+    <!-- ------------------------------------------- -->
+
+    <input type="text" id="inppwidth" placeholder="Width">
+    <input type="text" id="inppheight" placeholder="Height">
+    <input type="text" id="border-width" placeholder="Border width">
+    <br><br>
+    <div class="row">
+        <select id="border-style">
+            <option selected hidden>Border style</option>
+            <option>Solid</option>
+            <option>Dashed</option>
+        </select>
+        <select id="border-color">
+            <option selected hidden>Border color</option>
+            <option>Red</option>
+            <option>Black</option>
+        </select>
+        <select id="box-color">
+            <option selected hidden>Box color</option>
+            <option>Green</option>
+            <option>Blue</option>
+        </select>
+        <select id="background-color">
+            <option selected hidden>Background color</option>
+            <option>Red</option>
+            <option>Gray</option>
+        </select>
+        <button onclick="changed(this)">Ok</button>
+    </div>
+    <div id="box2">Hello World</div>
+
+    <!-- ------------------------------------------- -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

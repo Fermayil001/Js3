@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+  </head>
+  <body>
+    <div class="box-cal">
+      <input type="text" disabled id="textInp" class="caltext" value="" />
+      <div class="cal">
+        <button class="btnQ btn1" value="+" onclick="simvol(this)">+</button>
+        <button class="btnQ btn2" value="-" onclick="simvol(this)">-</button>
+        <button class="btnQ btn3" value="" onclick="simvol(this)"></button>
+        <button class="btnQ btn4" value="/" onclick="simvol(this)">/</button>
+        <button class="btnC btn5" value="1" onclick="simvol(this)">1</button>
+        <button class="btnC btn6" value="2" onclick="simvol(this)">2</button>
+        <button class="btnC btn7" value="3" onclick="simvol(this)">3</button>
+        <button class="btnB" value="=" onclick="hesabla()">=</button>
+        <button class="btnC btn9" value="4" onclick="simvol(this)">4</button>
+        <button class="btnC btn10" value="5" onclick="simvol(this)">5</button>
+        <button class="btnC btn11" value="6" onclick="simvol(this)">6</button>
+        <button class="btnC btn12" value="7" onclick="simvol(this)">7</button>
+        <button class="btnC btn13" value="8" onclick="simvol(this)">8</button>
+        <button class="btnC btn14" value="9" onclick="simvol(this)">9</button>
+        <button class="btnC btn15" value="0" onclick="simvol(this)">0</button>
+        <button class="btnC btn16" value="." onclick="simvol(this)">.</button>
+        <button class="btn-ac" value="ac" onclick="clearInput()">AC</button>
+      </div>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
