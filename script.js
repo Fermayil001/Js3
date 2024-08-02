@@ -62,7 +62,7 @@ function changed(b) {
     let borderColor = document.getElementById('border-color').value
     let boxColor = document.getElementById('box-color').value
     let backgroundColor = document.getElementById('background-color').value
-    box2.style.cssText = `
+    box2.style = `
         width: ${inppwidth.value}px;
         height: ${inppheight.value}px;
         border: ${borderWid}px ${borderStyle} ${borderColor};
